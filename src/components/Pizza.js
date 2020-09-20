@@ -1,12 +1,13 @@
 import React from "react"
 
-const Pizza = () => {
+const Pizza = (props) => {
+  // console.log("this is my pizza",props)
   return(
     <tr>
-      <td>{"Replace Me With Pizza Topping"}</td>
-      <td>{"Replace Me With Pizza Size"}</td>
-      <td>{"Replace Me With Vegatarian"}</td>
-      <td><button type="button" className="btn btn-primary">Edit Pizza</button></td>
+      <td>{props.el.topping}</td>
+      <td>{props.el.size}</td>
+      <td>{props.el.vegetarian ? "yes" : "no"}</td>
+      <td><button type="button" className="btn btn-primary" onClick={()=>(props.getPizza(props.el))}>Edit Pizza</button></td>
     </tr>
   )
 }
