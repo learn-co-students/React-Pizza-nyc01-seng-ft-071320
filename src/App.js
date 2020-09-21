@@ -45,7 +45,6 @@ class App extends Component {
             (pizza) => pizza.id === newPizza.id
           );
           newPizzaArray[index] = newPizza;
-
           this.setState({ pizzaArray: newPizzaArray });
         });
     };
