@@ -20,13 +20,13 @@ function PizzaForm (props){
           </div>
           <div className="col">
             <div className="form-check">
-              <input className="form-check-input" name="vegetarian" type="radio" value="Vegetarian" onChange={props.handleFormInput}  checked={props.vegetarian === "" ? false : props.vegetarian ? true : false }/>
+              <input className="form-check-input" type="radio" value={true} onChange={props.handleFormInput}  checked={props.vegetarian === "" ? false : props.vegetarian ? true : false }/>
               <label className="form-check-label">
                 Vegetarian
               </label>
             </div>
             <div className="form-check">
-              <input className="form-check-input" name="vegetarian" type="radio" value="Not Vegetarian" onChange={props.handleFormInput} checked={props.vegetarian === "" ? false : !props.vegetarian ? true : false }/>
+              <input className="form-check-input" type="radio" value={false} onChange={props.handleFormInput} checked={props.vegetarian === "" ? false : !props.vegetarian ? true : false }/>
               <label className="form-check-label">
                 Not Vegetarian
               </label>

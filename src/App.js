@@ -6,7 +6,7 @@ import PizzaList from './containers/PizzaList'
 class App extends Component {
 
   state = {
-    pizzaArray: "",
+    pizzaArray: [],
     id: "",
     topping: "",
     size: "", 
@@ -62,6 +62,11 @@ class App extends Component {
 
   handleFormInput = (e) => {
     e.persist()
+    if (e.target.type === "radio"){
+      this.setState(()=>({
+        vegetarian: e.target.value === "true" ? true : false 
+      }))
+    }
     this.setState(()=>({
       [e.target.name]: e.target.value
     }))

@@ -56,9 +56,9 @@
     },
     {
       "id": 10,
-      "topping": "Chicken",
-      "size": "Large",
-      "vegetarian": true
+      "topping": "Chicken NEW",
+      "size": "Medium",
+      "vegetarian": false
     }
   ]
 }
