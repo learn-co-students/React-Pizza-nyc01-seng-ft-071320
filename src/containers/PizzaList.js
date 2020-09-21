@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Pizza from '../components/Pizza'
 class PizzaList extends Component {
 
+  pizzas = () => this.props.pizzas.map(pizzaObj => <Pizza editHandler={this.props.editHandler} key={pizzaObj.id} pizza={pizzaObj} />)
+
   render() {
     return (
       <table className="table table-striped">
@@ -14,9 +16,7 @@ class PizzaList extends Component {
           </tr>
         </thead>
         <tbody>
-          {
-            //render Pizza here
-          }
+          {this.props.pizzas ? this.pizzas() : null}
         </tbody>
       </table>
     );
