@@ -7,7 +7,7 @@ class App extends Component {
 
   state = {
     array: [],
-    formPizza: []
+    formPizza: null
   }
 
   componentDidMount() {
@@ -38,11 +38,11 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.formPizza)
+    console.log('in app:', this.state.formPizza)
     return (
       <Fragment>
         <Header/>
-        <PizzaForm formPizza={this.state.formPizza} changeHandler={this.changeHandler}/>
+        { this.state.formPizza ? <PizzaForm key={this.state.formPizza.id} formPizza={this.state.formPizza} changeHandler={this.changeHandler}/> : null}
         <PizzaList pizza={this.state.array} getValue={this.getValue}/>
       </Fragment>
     );

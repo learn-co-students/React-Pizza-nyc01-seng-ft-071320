@@ -2,21 +2,25 @@ import React from "react"
 
 export default class PizzaForm extends React.Component {
 
-  state = {
-    id: "",
-    topping: "", 
-    size: "", 
-    vegetarian: ""
-    }
+  state = {...this.props.formPizza}
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({ 
-      topping: nextProps.formPizza.topping,
-      size: nextProps.formPizza.size,
-      vegetarian: nextProps.formPizza.vegetarian,
-      id: nextProps.formPizza.id
-    })
+  state = {
+    pizza: this.props.formPizza
   }
+
+  // componentWillReceiveProps(nextProps) {
+  //   this.setState({ 
+  //     topping: nextProps.formPizza.topping,
+  //     size: nextProps.formPizza.size,
+  //     vegetarian: nextProps.formPizza.vegetarian,
+  //     id: nextProps.formPizza.id
+  //   })
+  // }
+
+  componentDidMount() {
+    console.log("Mounted")
+  }
+  // rerender new form for each pizza
 
   // setPizza = () => {
   //   this.setState(() => ({

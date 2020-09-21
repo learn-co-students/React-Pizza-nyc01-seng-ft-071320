@@ -16,7 +16,7 @@
       "id": 3,
       "topping": "Mushroom",
       "size": "Small",
-      "vegetarian": false
+      "vegetarian": true
     },
     {
       "id": 4,
@@ -50,9 +50,9 @@
     },
     {
       "id": 9,
-      "topping": "Salami",
+      "topping": "Salami with ham",
       "size": "Large",
-      "vegetarian": false
+      "vegetarian": true
     },
     {
       "id": 10,
