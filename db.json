@@ -2,7 +2,7 @@
   "pizzas": [
     {
       "id": 1,
-      "topping": "Plain with extra cheeseeee",
+      "topping": "Plain",
       "size": "Small",
       "vegetarian": true
     },
@@ -16,19 +16,19 @@
       "id": 3,
       "topping": "Mushroom",
       "size": "Small",
-      "vegetarian": true
+      "vegetarian": false
     },
     {
       "id": 4,
-      "topping": "lettuce",
-      "size": "Small",
-      "vegetarian": true
+      "topping": "meatssss lovers",
+      "size": "Large",
+      "vegetarian": false
     },
     {
       "id": 5,
       "topping": "Bacon",
       "size": "Medium",
-      "vegetarian": false
+      "vegetarian": true
     },
     {
       "id": 6,

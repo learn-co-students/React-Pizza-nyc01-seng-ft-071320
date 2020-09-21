@@ -33,7 +33,7 @@ class App extends Component {
     .then(data => {
       let newArray = [...this.state.array]
       let changedArray = newArray.map(el => (el.id === data.id ? data : el))
-      this.setState({array: changedArray})
+      this.setState({array: changedArray, formPizza: []})
     })
   }
 
