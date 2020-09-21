@@ -1,262 +1,64 @@
 {
-  "pizzas": [
-    {
-      "id": 1,
-      "topping": "Plain",
-      "size": "Small",
-      "vegetarian": true,
-      "pizza": {
-        "id": 1,
-        "topping": "Plain",
-        "size": "Small",
-        "vegetarian": true
-      }
-    },
-    {
-      "id": 2,
-      "topping": "Pepperoni",
-      "size": "Small",
-      "vegetarian": false,
-      "pizza": {
-        "id": 2,
-        "topping": "Pepperoni",
-        "size": "Small",
-        "vegetarian": false,
-        "pizza": {
-          "id": 2,
-          "topping": "Pepperoni",
-          "size": "Small",
-          "vegetarian": false
-        }
-      }
-    },
-    {
-      "id": 3,
-      "topping": "Mushroom",
-      "size": "Small",
-      "vegetarian": true
-    },
-    {
-      "id": 4,
-      "topping": "Sausage",
-      "size": "Small",
-      "vegetarian": false
-    },
-    {
-      "id": 5,
-      "topping": "Bacon",
-      "size": "Medium",
-      "vegetarian": false
-    },
-    {
-      "id": 6,
-      "topping": "Spinach",
-      "size": "Medium",
-      "vegetarian": true
-    },
-    {
-      "id": 7,
-      "topping": "Black Olive",
-      "size": "Medium",
-      "vegetarian": true
-    },
-    {
-      "id": 8,
-      "topping": "Pineapple",
-      "size": "Medium",
-      "vegetarian": true
-    },
-    {
-      "id": 9,
-      "topping": "Salami",
-      "size": "Large",
-      "vegetarian": false
-    },
-    {
-      "id": 10,
-      "topping": "Chicken",
-      "size": "Large",
-      "vegetarian": true
-    },
-    {
-      "topping": "poop",
-      "size": "",
-      "vegetarian": "",
-      "id": 11,
-      "pizza": {
-        "topping": "poop",
-        "size": "",
-        "vegetarian": "",
-        "id": 11,
-        "pizza": {
-          "topping": "poop",
-          "size": "",
-          "vegetarian": "",
-          "id": 11,
-          "pizza": {
-            "topping": "poop",
-            "size": "",
-            "vegetarian": "",
-            "id": 11,
-            "pizza": {
-              "topping": "poop",
-              "size": "",
-              "vegetarian": "",
-              "id": 11,
-              "pizza": {
-                "topping": "poop",
-                "size": "",
-                "vegetarian": "",
-                "id": 11,
-                "pizza": {
-                  "topping": "poop",
-                  "size": "",
-                  "vegetarian": "",
-                  "id": 11,
-                  "pizza": {
-                    "topping": "poop",
-                    "size": "",
-                    "vegetarian": "",
-                    "id": 11,
-                    "pizza": {
-                      "topping": "poop",
-                      "size": "",
-                      "vegetarian": "",
-                      "id": 11,
-                      "pizza": {
-                        "topping": "poop",
-                        "size": "",
-                        "vegetarian": "",
-                        "id": 11,
-                        "pizza": {
-                          "topping": "poop",
-                          "size": "",
-                          "vegetarian": "",
-                          "id": 11,
-                          "pizza": {
-                            "topping": "poop",
-                            "size": "",
-                            "vegetarian": "",
-                            "id": 11,
-                            "pizza": {
-                              "topping": "poop",
-                              "size": "",
-                              "vegetarian": "",
-                              "id": 11,
-                              "pizza": {
-                                "topping": "poop",
-                                "size": "",
-                                "vegetarian": "",
-                                "id": 11,
-                                "pizza": {
-                                  "topping": "poop",
-                                  "size": "",
-                                  "vegetarian": "",
-                                  "id": 11,
-                                  "pizza": {
-                                    "topping": "poop",
-                                    "size": "",
-                                    "vegetarian": "",
-                                    "id": 11,
-                                    "pizza": {
-                                      "topping": "poop",
-                                      "size": "",
-                                      "vegetarian": "",
-                                      "id": 11,
-                                      "pizza": {
-                                        "topping": "poop",
-                                        "size": "",
-                                        "vegetarian": "",
-                                        "id": 11
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    {
-      "topping": "poopy",
-      "size": "Large",
-      "vegetarian": false,
-      "id": 12,
-      "pizza": {
-        "topping": "poopy",
-        "size": "Large",
-        "vegetarian": false,
-        "id": 12
-      }
-    },
-    {
-      "topping": "",
-      "size": "",
-      "vegetarian": false,
-      "id": 13,
-      "pizza": {
-        "topping": "",
-        "size": "",
-        "vegetarian": false,
-        "id": 13,
-        "pizza": {
-          "topping": "",
-          "size": "",
-          "vegetarian": false,
-          "id": 13
-        }
-      }
-    },
-    {
-      "topping": "",
-      "size": "",
-      "vegetarian": false,
-      "id": 14,
-      "pizza": {
-        "topping": "",
-        "size": "",
-        "vegetarian": false,
-        "id": 14,
-        "pizza": {
-          "topping": "",
-          "size": "",
-          "vegetarian": false,
-          "id": 14
-        }
-      }
-    },
-    {
-      "topping": "",
-      "size": "",
-      "vegetarian": false,
-      "id": 15,
-      "pizza": {
-        "topping": "",
-        "size": "",
-        "vegetarian": false,
-        "id": 15,
-        "pizza": {
-          "topping": "",
-          "size": "",
-          "vegetarian": false,
-          "id": 15,
-          "pizza": {
-            "topping": "",
-            "size": "",
-            "vegetarian": false,
-            "id": 15
-          }
-        }
-      }
-    }
-  ]
+	"pizzas": [
+		{
+			"id": 1,
+			"topping": "Plain",
+			"size": "Small",
+			"vegetarian": true
+		},
+		{
+			"id": 2,
+			"topping": "Pepperoni",
+			"size": "Small",
+			"vegetarian": false
+		},
+		{
+			"id": 3,
+			"topping": "Mushroom",
+			"size": "Small",
+			"vegetarian": true
+		},
+		{
+			"id": 4,
+			"topping": "Sausage",
+			"size": "Small",
+			"vegetarian": false
+		},
+		{
+			"id": 5,
+			"topping": "Bacon",
+			"size": "Medium",
+			"vegetarian": false
+		},
+		{
+			"id": 6,
+			"topping": "Spinach",
+			"size": "Medium",
+			"vegetarian": true
+		},
+		{
+			"id": 7,
+			"topping": "Black Olive",
+			"size": "Medium",
+			"vegetarian": true
+		},
+		{
+			"id": 8,
+			"topping": "Pineapple",
+			"size": "Medium",
+			"vegetarian": true
+		},
+		{
+			"id": 9,
+			"topping": "Salami",
+			"size": "Large",
+			"vegetarian": false
+		},
+		{
+			"id": 10,
+			"topping": "Chicken",
+			"size": "Large",
+			"vegetarian": true
+		}
+	]
 }
