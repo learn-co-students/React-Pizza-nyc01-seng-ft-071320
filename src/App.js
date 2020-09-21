@@ -38,29 +38,36 @@ class App extends Component {
   }
 
   handleSubmit = (id) => {
-    
-    let options = {
-      method: 'PATCH',
-      headers: {
-        'content-type':'application/json',
-        'accept':'application/json'
-      },
-      body: JSON.stringify({
-        topping: this.state.topping,
-        size: this.state.size,
-        vegetarian: this.state.vegetarian === 'Vegetarian' ? true : false 
+    if (id) {
+      let options = {
+        method: 'PATCH',
+        headers: {
+          'content-type':'application/json',
+          'accept':'application/json'
+        },
+        body: JSON.stringify({
+          topping: this.state.topping,
+          size: this.state.size,
+          vegetarian: this.state.vegetarian === 'Vegetarian' ? true : false 
+        })
+      }
+      fetch('http://localhost:3000/pizzas/' + id, options)
+      .then(res => res.json())
+      .then(updatedObj => {
+        let newArray = [...this.state.pizzas]
+        let foundObj = newArray.find(el => el.id === updatedObj.id)
+        foundObj.topping = this.state.topping
+        foundObj.size = this.state.size
+        foundObj.vegetarian = (this.state.vegetarian === 'Vegetarian' ? true : false)
+        this.setState({
+          pizzas: newArray,
+          id: '',
+          topping: '',
+          size: '',
+          vegetarian: ''
+        })
       })
     }
-    fetch('http://localhost:3000/pizzas/' + id, options)
-    .then(res => res.json())
-    .then(updatedObj => {
-      let newArray = [...this.state.pizzas]
-      let foundObj = newArray.find(el => el.id === updatedObj.id)
-      foundObj.topping = this.state.topping
-      foundObj.size = this.state.size
-      foundObj.vegetarian = (this.state.vegetarian === 'Vegetarian' ? true : false)
-      this.setState({pizzas: newArray})
-    })
   }
 
   render() {

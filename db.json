@@ -2,7 +2,7 @@
   "pizzas": [
     {
       "id": 1,
-      "topping": "Plain",
+      "topping": "Plain schmain ",
       "size": "Medium",
       "vegetarian": true
     },
@@ -15,8 +15,8 @@
     {
       "id": 3,
       "topping": "Mushroom",
-      "size": "Small",
-      "vegetarian": true
+      "size": "Medium",
+      "vegetarian": false
     },
     {
       "id": 4,
