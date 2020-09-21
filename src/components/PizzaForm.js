@@ -2,6 +2,7 @@ import React from "react";
 
 class PizzaForm extends React.Component {
   state = {
+    id: undefined,
     vegetarian: false,
     size: "Small",
     topping: "",
@@ -23,12 +24,28 @@ class PizzaForm extends React.Component {
     this.setState({
       toppings: "",
       size: "Small",
+      id: undefined,
+      vegetarian: false,
     });
   };
 
   toppingInput = (e) => {
     this.setState({ topping: e.target.value });
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    // this.props = current props
+    // looking for a change in editPizza
+    if (prevProps.editPizza.id !== this.props.editPizza.id) {
+      // set the form values to match the editPizza props
+      this.setState({
+        id: this.props.editPizza.id,
+        vegetarian: this.props.editPizza.vegetarian,
+        size: this.props.editPizza.size,
+        topping: this.props.editPizza.topping,
+      });
+    }
+  }
 
   render() {
     return (

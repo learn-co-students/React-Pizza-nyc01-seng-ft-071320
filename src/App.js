@@ -5,6 +5,7 @@ import PizzaList from "./containers/PizzaList";
 class App extends Component {
   state = {
     pizzaArray: [],
+    editPizza: {},
   };
 
   componentDidMount() {
@@ -28,7 +29,7 @@ class App extends Component {
         );
     };
 
-    const patch = (pizza) => {
+    const patch = () => {
       fetch(`http://localhost:3000/pizzas/${pizza.id}`, {
         method: "PATCH",
         headers: {
@@ -38,13 +39,18 @@ class App extends Component {
         body: JSON.stringify(pizza),
       })
         .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
+        .then((newPizza) => {
+          const newPizzaArray = this.state.pizzaArray;
+          const index = newPizzaArray.findIndex(
+            (pizza) => pizza.id === newPizza.id
+          );
+          newPizzaArray[index] = newPizza;
+
+          this.setState({ pizzaArray: newPizzaArray });
         });
     };
     // check if this pizza.id exists, if it does, use patch request
     // else use post
-    // console.log(obj, obj.id, obj.topping);
     // const newPizzaArray = this.state.pizzaArray;
     // const pizzaFind = newPizzaArray.find((pizza) => pizza.id);
 
@@ -56,13 +62,17 @@ class App extends Component {
     }
   };
   editButtonClicker = (pizza) => {
-    console.log(pizza);
+    this.setState({ editPizza: pizza });
   };
   render() {
     return (
       <Fragment>
+        v
         <Header />
-        <PizzaForm submitHandler={this.pizzaCreate} />
+        <PizzaForm
+          editPizza={this.state.editPizza}
+          submitHandler={this.pizzaCreate}
+        />
         <PizzaList
           pizzaArray={this.state.pizzaArray}
           editButton={this.editButtonClicker}
