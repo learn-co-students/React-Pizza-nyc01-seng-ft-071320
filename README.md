@@ -6,7 +6,7 @@ Welcome to your first day at the Access Labs Pizzeria!
 Today, you are tasked to building an online menu of all the pizzas that the pizzeria offers.
 
 The database of orders can be found in a json-server, under `http://localhost:3000/pizzas`.
-Make sure that before you fire up your React server, you *first* fire up your json-server.
+Make sure that before you fire up your React server, you _first_ fire up your json-server.
 
 ```text
 TO INSTALL: npm install -g json-server
